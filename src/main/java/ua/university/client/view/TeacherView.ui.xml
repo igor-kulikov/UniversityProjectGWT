@@ -1,0 +1,88 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+        xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:dp="urn:import:com.google.gwt.user.datepicker.client"
+        xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+
+    <ui:style>
+        .Header1 {
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .Header2 {
+            font-weight: bold;
+        }
+
+        .LeftSideMenuSelected {
+            color: lightslategrey;
+        }
+    </ui:style>
+    <g:RootLayoutPanel>
+        <g:layer>
+            <g:DockLayoutPanel>
+                <g:north size='30'>
+                    <g:Label text="Univerity Project - Teacher View" addStyleNames="{style.Header1}"/>
+                </g:north>
+                <g:west size='150'>
+                    <g:VerticalPanel spacing="10">
+			            <g:Hyperlink text="Project description" ui:field="switchToProjectDescrView"/>
+                        <g:Hyperlink text="Teachers" addStyleNames="{style.LeftSideMenuSelected}"/>
+                        <g:Hyperlink text="Students" ui:field="switchToStudentView"/>
+                        <g:Hyperlink text="Subjects dictionary"  ui:field="switchToRefSubjectView"/>
+                        <g:Hyperlink text="Clubs dictionary"  ui:field="switchToRefClubView"/>
+                    </g:VerticalPanel>
+                </g:west>
+                <g:center>
+                    <g:ScrollPanel>
+                        <g:VerticalPanel spacing="10">
+                            <g:Label text="Search Teachers:" addStyleNames="{style.Header2}"/>
+                            <g:HorizontalPanel spacing="10">
+                                <g:Label text="Last Name:"/>
+                                <g:TextBox ui:field="searchLastName"/>
+                                <g:Label text="First Name:"/>
+                                <g:TextBox ui:field="searchFirstName"/>
+                                <g:Label text="Birthday:"/>
+                                <dp:DateBox ui:field="searchBirthday"/>
+                            </g:HorizontalPanel>
+                            <g:HorizontalPanel spacing="10">
+                                <g:Label text="Position:"/>
+                                <g:TextBox ui:field="searchPosition"/>
+                                <g:Label text="Subject:"/>
+                                <g:ListBox ui:field="searchSubject" width="200"/>
+                            </g:HorizontalPanel>
+                            <g:Button ui:field="searchTeachers" text="Search"/>
+                            <g:SimpleLayoutPanel height="250px" width="800px">
+                                <c:DataGrid ui:field="teacherGrid"/>
+                            </g:SimpleLayoutPanel>
+
+                            <g:VerticalPanel spacing="10">
+                                <g:Label text="Manage Teachers:" addStyleNames="{style.Header2}"/>
+                                <g:HorizontalPanel spacing="10">
+                                    <g:Label text="Last Name:"/>
+                                    <g:TextBox ui:field="manageLastName"/>
+                                    <g:Label text="First Name:"/>
+                                    <g:TextBox ui:field="manageFirstName"/>
+                                    <g:Label text="Birthday:"/>
+                                    <dp:DateBox ui:field="manageBirthday"/>
+                                </g:HorizontalPanel>
+                                <g:HorizontalPanel spacing="10">
+                                    <g:Label text="Position:"/>
+                                    <g:TextBox ui:field="managePosition"/>
+                                    <g:Label text="Subject:"/>
+                                    <g:ListBox ui:field="manageSubject" width="200"/>
+                                </g:HorizontalPanel>
+                            </g:VerticalPanel>
+                            <g:HorizontalPanel spacing="10">
+                                <g:Button ui:field="addTeacher">Add</g:Button>
+                                <g:Button ui:field="editTeacher">Edit</g:Button>
+                                <g:Button ui:field="deleteTeacher">Delete</g:Button>
+                            </g:HorizontalPanel>
+                        </g:VerticalPanel>
+                    </g:ScrollPanel>
+                </g:center>
+            </g:DockLayoutPanel>
+        </g:layer>
+    </g:RootLayoutPanel>
+</ui:UiBinder>

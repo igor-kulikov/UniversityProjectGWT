@@ -1,0 +1,18 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.7.0//EN"
+        "http://gwtproject.org/doctype/2.7.0/gwt-module.dtd">
+<module rename-to="university">
+
+    <!-- Inherit the core Web Toolkit stuff.                  -->
+    <inherits name='com.google.gwt.user.User'/>
+    <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+
+    <!-- Specify the app entry point class.                   -->
+    <entry-point class='ua.university.client.University'/>
+
+    <!-- Specify the app servlets.                   -->
+    <servlet path='/UniversityService' class='ua.university.server.UniversityServiceImpl'/>
+
+
+    <source path='client'/>
+   <!-- <source path='shared'/>-->
+</module>
