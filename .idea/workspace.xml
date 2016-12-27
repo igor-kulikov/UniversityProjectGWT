@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e802a7c-10ea-4162-bce9-55bf4cb01097" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/ProjectDescrView.ui.xml" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/ProjectDescrView.ui.xml" />
     </list>
     <ignored path="UniversityProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -233,6 +232,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -1035,7 +1035,7 @@
       <workItem from="1480884740915" duration="709000" />
       <workItem from="1481365451600" duration="12507000" />
       <workItem from="1481478527441" duration="522000" />
-      <workItem from="1482874592244" duration="452000" />
+      <workItem from="1482874592244" duration="548000" />
     </task>
     <task id="LOCAL-00001" summary="simple commit">
       <created>1480885001682</created>
@@ -1058,11 +1058,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481393191404</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Project description change">
+      <created>1482875090260</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1482875090260</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15013000" />
+    <option name="totallyTimeSpent" value="15109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1157,7 +1164,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="simple commit" />
     <MESSAGE value="InheritanceIssueFix" />
-    <option name="LAST_COMMIT_MESSAGE" value="InheritanceIssueFix" />
+    <MESSAGE value="Project description change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project description change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
