@@ -1,19 +1,4 @@
 CREATE SCHEMA `university`;
-drop user univ_user;
-create user univ_user@localhost identified by 'Forever007';
-/*drop user univ_user@localhost;
-create user univ_user identified by Forever007;
-create user javastudy identified by Forever007;*/
-
-select * from university.ref_subjects;
-select * from university.ref_clubs;
-select * from university.person;
-select * from university.student;
-select * from university.student_subject;
-select * from university.student_club;
-select * from university.teacher;
-
-delete from university.ref_subjects where subject_id = 7;
 
 -- Drap tables
 drop table university.teacher;

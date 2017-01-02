@@ -2,83 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e802a7c-10ea-4162-bce9-55bf4cb01097" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_11_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_9_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/university/repository/ClubRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/university/repository/SubjectRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/university/repository/TeacherRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/university/shared/service/ClubService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/university/shared/service/ClubServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/university/shared/service/SubjectService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/university/shared/service/SubjectServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/university/shared/service/TeacherService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/university/shared/service/TeacherServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/university/utils/Aspect.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_0_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_0_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/University.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/University.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/entity/TeacherDTO.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/entity/TeacherDTO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/server/UniversityServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/server/UniversityServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/utils/HibernateSessionFactory.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/utils/HibernateSessionFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/AppController.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/AppController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/UniversityService.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/UniversityService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/UniversityServiceAsync.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/UniversityServiceAsync.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/entity/ClubDTO.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/entity/ClubDTO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/entity/PersonDTO.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/entity/PersonDTO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/entity/StudentDTO.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/entity/StudentDTO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/entity/SubjectDTO.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/entity/SubjectDTO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/ProjectDescrPresenter.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/ProjectDescrPresenter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefClubPresenter$1.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefClubPresenter$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefClubPresenter$2.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefClubPresenter$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefClubPresenter$3.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefClubPresenter$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefClubPresenter$4.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefClubPresenter$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefClubPresenter.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefClubPresenter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefSubjectPresenter$1.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefSubjectPresenter$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefSubjectPresenter$2.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefSubjectPresenter$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefSubjectPresenter$3.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefSubjectPresenter$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefSubjectPresenter$4.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefSubjectPresenter$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefSubjectPresenter.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/RefSubjectPresenter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter$1.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter$2.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter$3.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter$4.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter$5.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter$6.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/StudentPresenter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/TeacherPresenter$1.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/TeacherPresenter$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/TeacherPresenter$2.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/TeacherPresenter$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/TeacherPresenter$3.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/TeacherPresenter$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/TeacherPresenter$4.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/TeacherPresenter$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/TeacherPresenter$5.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/TeacherPresenter$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/TeacherPresenter.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/presenter/TeacherPresenter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/ProjectDescrViewImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/ProjectDescrViewImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/RefClubViewImpl$1.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/RefClubViewImpl$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/RefClubViewImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/RefClubViewImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/RefSubjectViewImpl$1.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/RefSubjectViewImpl$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/RefSubjectViewImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/RefSubjectViewImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$1.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$2.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$3.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$4.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$5.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$6.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$7.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/StudentViewImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherView.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$1.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$2.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$3.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$4.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$5.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$6.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$7.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/client/view/TeacherViewImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/shared/Club.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/shared/Club.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/shared/Person.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/shared/Person.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/shared/Student.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/shared/Student.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/shared/Subject.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/shared/Subject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/university/shared/Teacher.class" afterPath="$PROJECT_DIR$/target/classes/ua/university/shared/Teacher.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UniversityProject.iml" afterPath="$PROJECT_DIR$/UniversityProject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/java/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/AppController.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/AppController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/University.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/University.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/UniversityService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/UniversityService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/UniversityServiceAsync.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/UniversityServiceAsync.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/entity/ClubDTO.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/entity/ClubDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/entity/PersonDTO.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/entity/PersonDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/entity/StudentDTO.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/entity/StudentDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/entity/SubjectDTO.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/entity/SubjectDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/entity/TeacherDTO.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/entity/TeacherDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/presenter/Presenter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/presenter/Presenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/presenter/ProjectDescrPresenter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/presenter/ProjectDescrPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/presenter/RefClubPresenter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/presenter/RefClubPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/presenter/RefSubjectPresenter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/presenter/RefSubjectPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/presenter/StudentPresenter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/presenter/StudentPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/presenter/TeacherPresenter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/presenter/TeacherPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/ProjectDescrView.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/ProjectDescrView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/ProjectDescrView.ui.xml" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/ProjectDescrView.ui.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/ProjectDescrViewImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/ProjectDescrViewImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/RefClubView.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/RefClubView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/RefClubView.ui.xml" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/RefClubView.ui.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/RefClubViewImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/RefClubViewImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/RefSubjectView.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/RefSubjectView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/RefSubjectView.ui.xml" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/RefSubjectView.ui.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/RefSubjectViewImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/RefSubjectViewImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/StudentView.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/StudentView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/StudentView.ui.xml" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/StudentView.ui.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/StudentViewImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/StudentViewImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/TeacherView.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/TeacherView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/TeacherView.ui.xml" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/TeacherView.ui.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/client/view/TeacherViewImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/client/view/TeacherViewImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/server/UniversityServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/server/UniversityServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/shared/Club.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/shared/Club.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/shared/Person.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/shared/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/shared/Student.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/shared/Student.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/shared/Subject.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/shared/Subject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/shared/Teacher.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/shared/Teacher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/university/utils/HibernateSessionFactory.java" afterPath="$PROJECT_DIR$/src/main/java/ua/university/utils/HibernateSessionFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
     </list>
     <ignored path="UniversityProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -229,8 +211,8 @@
       <file leaf-file-name="StudentViewImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/university/client/view/StudentViewImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -1198,7 +1180,7 @@
       <workItem from="1483091784406" duration="1787000" />
       <workItem from="1483095254801" duration="15519000" />
       <workItem from="1483173907785" duration="17946000" />
-      <workItem from="1483261092860" duration="18369000" />
+      <workItem from="1483261092860" duration="18720000" />
     </task>
     <task id="LOCAL-00001" summary="simple commit">
       <created>1480885001682</created>
@@ -1235,11 +1217,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482875151438</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Spring DATA added">
+      <created>1483360897027</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1483360897027</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76470000" />
+    <option name="totallyTimeSpent" value="76821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1336,7 +1325,8 @@
     <MESSAGE value="simple commit" />
     <MESSAGE value="InheritanceIssueFix" />
     <MESSAGE value="Project description change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project description change" />
+    <MESSAGE value="Spring DATA added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1833,8 +1823,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/university/client/view/StudentViewImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
           <folding />
         </state>
       </provider>
