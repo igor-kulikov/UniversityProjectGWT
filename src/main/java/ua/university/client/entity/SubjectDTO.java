@@ -1,17 +1,6 @@
 package ua.university.client.entity;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
-import ua.university.client.entity.TeacherDTO;
-import ua.university.shared.Subject;
-
-import javax.persistence.*;
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
-
-/**
- * Created by Win7 on 06.10.2016.
- */
 
 public class SubjectDTO implements Serializable {
     private int id;
@@ -41,14 +30,6 @@ public class SubjectDTO implements Serializable {
         this.subjectName = subjectName;
     }
 
-    /*public Set<TeacherDTO> getTeachers() {
-        return teachers;
-    }
-
-    public void setTeachers(Set<TeacherDTO> teachers) {
-        this.teachers = teachers;
-    }*/
-
     @Override
     public String toString() {
         return "SubjectDTO{" +
@@ -73,16 +54,5 @@ public class SubjectDTO implements Serializable {
     @Override
     public int hashCode() {
         return subjectName.hashCode();
-    }
-
-    public static void main(String[] args) {
-        Set<SubjectDTO> set = new HashSet<SubjectDTO>();
-        SubjectDTO s1 = new SubjectDTO(0, "<<ANY SUBJECT>>");
-        SubjectDTO s2 = new SubjectDTO(0, "<<ANY SUBJECT>>");
-
-        set.add(s1);
-        System.out.println(set);
-        //System.out.println(s1.equals(s2));
-        System.out.println(set.contains(s2));
     }
 }

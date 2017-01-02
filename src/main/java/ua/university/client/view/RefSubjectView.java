@@ -2,16 +2,10 @@ package ua.university.client.view;
 
 import com.google.gwt.user.client.ui.Widget;
 import ua.university.client.entity.SubjectDTO;
-import ua.university.client.entity.TeacherDTO;
-
-import java.util.ArrayList;
 import java.util.Set;
 
-/**
- * Created by Win7 on 15.10.2016.
- */
 public interface RefSubjectView {
-    public interface Presenter {
+    interface Presenter {
         void onAddSubjectButtonClicked(SubjectDTO Subject);
 
         void onDeleteSubjectButtonClicked(SubjectDTO Subject);

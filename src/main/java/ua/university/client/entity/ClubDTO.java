@@ -2,9 +2,6 @@ package ua.university.client.entity;
 
 import java.io.Serializable;
 
-/**
- * Created by ikulikov on 26.10.2016.
- */
 public class ClubDTO implements Serializable {
     private int id;
     private String clubName;

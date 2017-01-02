@@ -7,20 +7,12 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.uibinder.client.UiTemplate;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.*;
-import com.google.gwt.view.client.SelectionChangeEvent;
 import com.google.gwt.view.client.SingleSelectionModel;
-import ua.university.client.entity.ClubDTO;
 import ua.university.client.entity.SubjectDTO;
-import ua.university.shared.Subject;
-
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by Win7 on 15.10.2016.
- */
 public class RefSubjectViewImpl extends Composite implements RefSubjectView {
 
     @UiTemplate("RefSubjectView.ui.xml")
@@ -35,8 +27,8 @@ public class RefSubjectViewImpl extends Composite implements RefSubjectView {
     @UiField
     TextBox manageSubjectName;
 
-    final Set<SubjectDTO> subjectsDTO = new HashSet<SubjectDTO>();
-    SubjectDTO selectedSubjectDTO = new SubjectDTO();
+    private final Set<SubjectDTO> subjectsDTO = new HashSet<SubjectDTO>();
+    private SubjectDTO selectedSubjectDTO = new SubjectDTO();
 
     private static RefSubjectViewUiBinder ourUiBinder = GWT.create(RefSubjectViewUiBinder.class);
 

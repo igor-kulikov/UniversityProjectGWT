@@ -1,13 +1,8 @@
 package ua.university.shared;
 
 import ua.university.client.entity.ClubDTO;
-
 import javax.persistence.*;
 import java.io.Serializable;
-
-/**
- * Created by ikulikov on 26.10.2016.
- */
 
 @Entity
 @Table(name="ref_clubs")
@@ -51,5 +46,24 @@ public class Club implements Serializable {
     @Override
     public String toString() {
         return "clubId: " + clubId + "; clubName: " + clubName;
+    }
+
+    @Override
+    public int hashCode() {
+        return clubName.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Club c = (Club) obj;
+        if (!this.clubName.equals(c.clubName))
+            return false;
+        return true;
     }
 }

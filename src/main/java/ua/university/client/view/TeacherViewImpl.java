@@ -2,7 +2,7 @@ package ua.university.client.view;
 
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.*;
+import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -10,21 +10,14 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.uibinder.client.UiTemplate;
 import com.google.gwt.user.cellview.client.DataGrid;
-import com.google.gwt.user.cellview.client.HasKeyboardSelectionPolicy;
 import com.google.gwt.user.cellview.client.TextColumn;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.*;
 import com.google.gwt.user.datepicker.client.DateBox;
 import com.google.gwt.view.client.SelectionChangeEvent;
 import com.google.gwt.view.client.SingleSelectionModel;
 import ua.university.client.entity.SubjectDTO;
 import ua.university.client.entity.TeacherDTO;
-import ua.university.shared.Teacher;
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class TeacherViewImpl extends Composite implements TeacherView {
 
@@ -63,9 +56,8 @@ public class TeacherViewImpl extends Composite implements TeacherView {
     @UiField
     Button addTeacher;
 
-    final SubjectDTO selectedSubject = new SubjectDTO(0, "");
-    final TeacherDTO selectedTeacher = new TeacherDTO(0, "", "", new Date(0), "", selectedSubject);
-    Set<SubjectDTO> subjectsList;
+    private final SubjectDTO selectedSubject = new SubjectDTO(0, "");
+    private final TeacherDTO selectedTeacher = new TeacherDTO(0, "", "", new Date(0), "", selectedSubject);
 
     private Presenter presenter;
 
@@ -90,7 +82,7 @@ public class TeacherViewImpl extends Composite implements TeacherView {
             }
         };
         teacherGrid.addColumn(id, "Id");
-        //teacherGrid.setColumnWidth(0, 1, Style.Unit.PX);
+        teacherGrid.setColumnWidth(0, 1, Style.Unit.PX);
 
         TextColumn<TeacherDTO> lastName = new TextColumn<TeacherDTO>() {
             @Override
@@ -215,7 +207,7 @@ public class TeacherViewImpl extends Composite implements TeacherView {
         }
     }
 
-    public void displayTeachers(ArrayList<TeacherDTO> teachers) {
+    public void displayTeachers(List<TeacherDTO> teachers) {
         teacherGrid.setRowCount(teachers.size(), true);
         teacherGrid.setRowData(0, teachers);
     }

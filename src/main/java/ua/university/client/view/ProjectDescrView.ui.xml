@@ -22,7 +22,7 @@
         <g:layer>
             <g:DockLayoutPanel>
                 <g:north size='30' styleName="">
-                    <g:Label text="Univerity Project - ProjectDescr View" addStyleNames="{style.Header1}"/>
+                    <g:Label text="Univerity Project" addStyleNames="{style.Header1}"/>
                 </g:north>
                 <g:west size='150'>
                     <g:VerticalPanel spacing="10">
@@ -37,7 +37,7 @@
                     <g:HTMLPanel>
                         <html>
                             <body>
-                                <p>UI на GWT (UiBinder, MVP)</p>
+                                <p></p>
                                 <p>В университете есть студенты и преподаватели (у них есть общие поля имя, фамилия, год
                                     рождения), но у преподавателей есть дополнительно дожность, а у студентов – к какому
                                     клубу они относятся. Также есть список изучаемых предметов.
@@ -51,13 +51,17 @@
                                             (Many-To-One, One-To-Many)
                                         </li>
                                         <li>- Студенты изучают разные предметы (Many-To-Many)</li>
+                                        <li>- Студенты состоят в различных клубах (Many-To-Many)</li>
                                     </ul>
                                 </p>
                                 <p>Функциональность:
                                     <ul>
-                                        <li>- Поиск по преподавателей заданным атрибутам
+
+                                        <li>- Поиск по студентов и преподавателей заданным атрибутам (CriteriaAPI,
+                                            CriteriaBuilder)
                                         </li>
-                                        <li>- Поиск по строго заданной фамилии</li>
+                                        <li>- CRUD-операции (JPA, Spring DATA, HQL)</li>
+                                        <li>- UI (GWT: UiBinder, MVP)</li>
                                     </ul>
                                 </p>
                             </body>

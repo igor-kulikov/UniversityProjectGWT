@@ -1,6 +1,7 @@
 package ua.university.client.view;
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -9,7 +10,6 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.uibinder.client.UiTemplate;
 import com.google.gwt.user.cellview.client.DataGrid;
 import com.google.gwt.user.cellview.client.TextColumn;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.*;
 import com.google.gwt.user.datepicker.client.DateBox;
 import com.google.gwt.view.client.SelectionChangeEvent;
@@ -17,16 +17,12 @@ import com.google.gwt.view.client.SingleSelectionModel;
 import ua.university.client.entity.ClubDTO;
 import ua.university.client.entity.StudentDTO;
 import ua.university.client.entity.SubjectDTO;
-import ua.university.shared.Club;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by Win7 on 15.10.2016.
- */
 public class StudentViewImpl extends Composite implements StudentView {
 
     @UiTemplate("StudentView.ui.xml")
@@ -63,10 +59,10 @@ public class StudentViewImpl extends Composite implements StudentView {
     @UiField
     Button addStudent;
 
-    final Set<SubjectDTO> subjectsList = new HashSet<SubjectDTO>();
-    final Set<ClubDTO> clubsList = new HashSet<ClubDTO>();
+    private final Set<SubjectDTO> subjectsList = new HashSet<SubjectDTO>();
+    private final Set<ClubDTO> clubsList = new HashSet<ClubDTO>();
 
-    final StudentDTO selectedStudent = new StudentDTO(0, "", "", new Date(0),
+    private final StudentDTO selectedStudent = new StudentDTO(0, "", "", new Date(0),
             new HashSet<SubjectDTO>(), new HashSet<ClubDTO>());
 
 
@@ -93,7 +89,7 @@ public class StudentViewImpl extends Composite implements StudentView {
             }
         };
         studentGrid.addColumn(id, "Id");
-        //studentGrid.setColumnWidth(0, 1, Style.Unit.PX);
+        studentGrid.setColumnWidth(0, 1, Style.Unit.PX);
 
         TextColumn<StudentDTO> lastName = new TextColumn<StudentDTO>() {
             @Override

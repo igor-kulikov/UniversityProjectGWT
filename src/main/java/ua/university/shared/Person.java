@@ -4,13 +4,10 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * Created by Win7 on 08.10.2016.
- */
 @Entity
 @Table(name = "person")
 @Inheritance(strategy = InheritanceType.JOINED)
-public class Person implements Serializable {
+public abstract class Person implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "person_id", nullable = false)
@@ -65,5 +62,27 @@ public class Person implements Serializable {
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+        result = 31 * result + (birthday != null ? birthday.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null) return false;
+        if (getClass() != obj.getClass()) return false;
+
+        Person p = (Person) obj;
+        if (!this.firstName.equals(p.firstName)) return false;
+        if (!this.lastName.equals(p.lastName)) return false;
+        if (!this.birthday.equals(p.birthday)) return false;
+
+        return true;
     }
 }

@@ -22,7 +22,7 @@
         <g:layer>
             <g:DockLayoutPanel>
                 <g:north size='30' styleName="">
-                    <g:Label text="Univerity Project - RefSubject View" addStyleNames="{style.Header1}"/>
+                    <g:Label text="Univerity Project" addStyleNames="{style.Header1}"/>
                 </g:north>
                 <g:west size='150'>
                     <g:VerticalPanel spacing="10">

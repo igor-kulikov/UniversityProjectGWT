@@ -10,15 +10,11 @@ import com.google.gwt.uibinder.client.UiTemplate;
 import com.google.gwt.user.client.ui.*;
 import com.google.gwt.view.client.SingleSelectionModel;
 import ua.university.client.entity.ClubDTO;
-import ua.university.client.entity.StudentDTO;
 import ua.university.client.entity.SubjectDTO;
 
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by Win7 on 15.10.2016.
- */
 public class RefClubViewImpl extends Composite implements RefClubView{
 
     @UiTemplate("RefClubView.ui.xml")
@@ -33,8 +29,8 @@ public class RefClubViewImpl extends Composite implements RefClubView{
     @UiField
     TextBox manageClubName;
 
-    final Set<ClubDTO> clubsDTO = new HashSet<ClubDTO>();
-    ClubDTO selectedClubDTO = new ClubDTO();
+    private final Set<ClubDTO> clubsDTO = new HashSet<ClubDTO>();
+    private ClubDTO selectedClubDTO = new ClubDTO();
 
     private static RefClubViewUiBinder ourUiBinder = GWT.create(RefClubViewUiBinder.class);
 
@@ -61,14 +57,14 @@ public class RefClubViewImpl extends Composite implements RefClubView{
         if (presenter != null) {
             presenter.onAddClubButtonClicked(new ClubDTO(0, manageClubName.getText()));
         }
-    };
+    }
 
     @UiHandler("deleteClub")
     void onDeleteClubButtonClicked(ClickEvent event){
         if (presenter != null) {
             presenter.onDeleteClubButtonClicked(selectedClubDTO);
         }
-    };
+    }
 
     @UiHandler("editClub")
     void onEditClubButtonClicked(ClickEvent event){
@@ -77,7 +73,7 @@ public class RefClubViewImpl extends Composite implements RefClubView{
                     manageClubName.getText());
             presenter.onEditClubButtonClicked(c);
         }
-    };
+    }
 
 
     @UiHandler("switchToProjectDescrView")

@@ -1,7 +1,6 @@
 package ua.university.client.presenter;
 
 
-import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.shared.HandlerManager;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
@@ -23,8 +22,6 @@ public class TeacherPresenter implements Presenter,
     private final TeacherView view;
     private final UniversityServiceAsync rpcService;
     private final HandlerManager eventBus;
-
-    //private final ArrayList<SubjectDTO> subjects = new ArrayList<SubjectDTO>();
 
     public TeacherPresenter(UniversityServiceAsync rpcService,
                             HandlerManager eventBus, TeacherView view) {
@@ -59,14 +56,14 @@ public class TeacherPresenter implements Presenter,
 
 
     public void onSearchTeachersButtonClicked(TeacherDTO searchTeacherDTO) {
-        rpcService.searchTeachers(searchTeacherDTO, new AsyncCallback<ArrayList<TeacherDTO>>() {
+        rpcService.searchTeachers(searchTeacherDTO, new AsyncCallback<List<TeacherDTO>>() {
             @Override
             public void onFailure(Throwable caught) {
                 Window.alert("Can't fetch Teachers from DB!");
             }
 
             @Override
-            public void onSuccess(ArrayList<TeacherDTO> result) {
+            public void onSuccess(List<TeacherDTO> result) {
                 view.displayTeachers(result);
             }
         });
@@ -111,7 +108,7 @@ public class TeacherPresenter implements Presenter,
                 });
     }
 
-    public void setSubjects() {
+    private void setSubjects() {
         rpcService.getSubjects(new AsyncCallback<Set<SubjectDTO>>() {
             @Override
             public void onFailure(Throwable caught) {

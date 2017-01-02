@@ -1,19 +1,11 @@
 package ua.university.shared;
 
-import org.hibernate.annotations.GeneratorType;
-import ua.university.client.entity.ClubDTO;
 import ua.university.client.entity.StudentDTO;
-import ua.university.client.entity.SubjectDTO;
-import ua.university.client.entity.TeacherDTO;
-
 import javax.persistence.*;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by Win7 on 23.10.2016.
- */
 @Entity
 @Table(name = "student")
 @PrimaryKeyJoinColumn(name="person_id")
@@ -45,13 +37,6 @@ public class Student extends Person {
 
     public Student(StudentDTO studentDTO){
         super(0, studentDTO.getFirstName(), studentDTO.getLastName(), studentDTO.getBirthday());
-        //subjects = new HashSet<Subject>(studentDTO.getSubjects().size());
-        /*for(SubjectDTO s : studentDTO.getSubjects())
-            subjects.add(new Subject(s));*/
-
-        //clubs = new HashSet<Club>(studentDTO.getClubs().size());
-        /*for(ClubDTO c : studentDTO.getClubs())
-            clubs.add(new Club(c));*/
     }
 
     @Override

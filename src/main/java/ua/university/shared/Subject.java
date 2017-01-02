@@ -62,9 +62,22 @@ public class Subject implements Serializable {
         return "subjectName: " + subjectName /*+ "; teachers: " + teachers*/;
     }
 
-    public static void main(String[] args) {
-        SubjectDTO s = new SubjectDTO(0, "Math");
-        Subject s1 = new Subject(s);
-        System.out.println(s1);
+    @Override
+    public int hashCode() {
+        return subjectName.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Subject c = (Subject) obj;
+        if (!this.subjectName.equals(c.subjectName))
+            return false;
+        return true;
     }
 }

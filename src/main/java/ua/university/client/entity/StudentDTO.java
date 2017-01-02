@@ -1,9 +1,5 @@
 package ua.university.client.entity;
 
-/**
- * Created by Win7 on 25.10.2016.
- */
-
 import java.util.Date;
 import java.util.Set;
 
@@ -17,13 +13,6 @@ public class StudentDTO extends PersonDTO {
     }
 
     public StudentDTO(int id, String firstName, String lastName, Date birthday, Set<SubjectDTO> subjects, Set<ClubDTO> clubs) {
-        super(firstName, lastName, birthday);
-        this.id = id;
-        this.subjects = subjects;
-        this.clubs = clubs;
-    }
-
-    public StudentDTO(String firstName, String lastName, Date birthday, int id, Set<SubjectDTO> subjects, Set<ClubDTO> clubs) {
         super(firstName, lastName, birthday);
         this.id = id;
         this.subjects = subjects;

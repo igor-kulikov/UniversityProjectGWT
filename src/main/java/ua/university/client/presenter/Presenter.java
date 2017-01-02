@@ -2,6 +2,6 @@ package ua.university.client.presenter;
 
 import com.google.gwt.user.client.ui.HasWidgets;
 
-public abstract interface Presenter {
-  public abstract void go(final HasWidgets container);
+public interface Presenter {
+  void go(final HasWidgets container);
 }

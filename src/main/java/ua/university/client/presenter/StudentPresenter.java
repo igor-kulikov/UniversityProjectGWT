@@ -12,8 +12,6 @@ import ua.university.client.entity.StudentDTO;
 import ua.university.client.entity.SubjectDTO;
 import ua.university.client.event.*;
 import ua.university.client.view.StudentView;
-import ua.university.client.view.TeacherView;
-import ua.university.client.entity.TeacherDTO;
 
 import java.util.*;
 
@@ -23,8 +21,6 @@ public class StudentPresenter implements Presenter,
     private final StudentView view;
     private final UniversityServiceAsync rpcService;
     private final HandlerManager eventBus;
-
-    //private final ArrayList<SubjectDTO> subjects = new ArrayList<SubjectDTO>();
 
     public StudentPresenter(UniversityServiceAsync rpcService,
                             HandlerManager eventBus, StudentView view) {
@@ -41,21 +37,6 @@ public class StudentPresenter implements Presenter,
         setSubjects();
         setClubs();
     }
-
-    /*public void setSubjectsList(){
-        rpcService.getSubjects(new AsyncCallback<Set<SubjectDTO>>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                Window.alert("Fetching subjects from DB error!");
-            }
-
-            @Override
-            public void onSuccess(Set<SubjectDTO> result){
-                view.setSubjectList(result);
-
-            }
-        });
-    }*/
 
     public void onSwitchToProjectDescrViewClicked(){
         eventBus.fireEvent(new SwitchToProjectDescrViewEvent());
@@ -86,8 +67,6 @@ public class StudentPresenter implements Presenter,
             }
         });
     }
-
-
 
     public void onAddStudentButtonClicked(StudentDTO studentDTO) {
         rpcService.addStudent(studentDTO,
@@ -128,7 +107,7 @@ public class StudentPresenter implements Presenter,
                 });
     }
 
-    public void setSubjects(){
+    private void setSubjects(){
         rpcService.getSubjects(new AsyncCallback<Set<SubjectDTO>>() {
             @Override
             public void onFailure(Throwable caught) {
@@ -143,7 +122,7 @@ public class StudentPresenter implements Presenter,
         });
     }
 
-    public void setClubs(){
+    private void setClubs(){
         rpcService.getClubs(new AsyncCallback<Set<ClubDTO>>() {
             @Override
             public void onFailure(Throwable caught) {

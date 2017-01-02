@@ -1,6 +1,5 @@
 package ua.university.client.presenter;
 
-
 import com.google.gwt.event.shared.HandlerManager;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
@@ -8,13 +7,9 @@ import com.google.gwt.user.client.ui.HasWidgets;
 
 import ua.university.client.UniversityServiceAsync;
 import ua.university.client.entity.ClubDTO;
-import ua.university.client.entity.SubjectDTO;
 import ua.university.client.event.*;
 import ua.university.client.view.RefClubView;
-import ua.university.client.view.TeacherView;
-import ua.university.client.entity.TeacherDTO;
 import ua.university.client.event.SwitchToTeacherViewEvent;
-import ua.university.client.event.SwitchToRefClubViewEvent;
 
 import java.util.*;
 
@@ -24,8 +19,6 @@ public class RefClubPresenter implements Presenter,
     private final RefClubView view;
     private final UniversityServiceAsync rpcService;
     private final HandlerManager eventBus;
-
-    //private final ArrayList<SubjectDTO> subjects = new ArrayList<SubjectDTO>();
 
     public RefClubPresenter(UniversityServiceAsync rpcService,
                             HandlerManager eventBus, RefClubView view) {
@@ -96,7 +89,7 @@ public class RefClubPresenter implements Presenter,
                 });
     }
 
-    public void setClubs(){
+    private void setClubs(){
         rpcService.getClubs(new AsyncCallback<Set<ClubDTO>>() {
             @Override
             public void onFailure(Throwable caught) {
@@ -109,5 +102,4 @@ public class RefClubPresenter implements Presenter,
             }
         });
     }
-
 }

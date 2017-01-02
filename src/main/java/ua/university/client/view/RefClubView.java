@@ -2,17 +2,10 @@ package ua.university.client.view;
 
 import com.google.gwt.user.client.ui.Widget;
 import ua.university.client.entity.ClubDTO;
-import ua.university.client.entity.SubjectDTO;
-import ua.university.client.entity.TeacherDTO;
-
-import java.util.ArrayList;
 import java.util.Set;
 
-/**
- * Created by Win7 on 15.10.2016.
- */
 public interface RefClubView {
-    public interface Presenter {
+    interface Presenter {
         void onAddClubButtonClicked(ClubDTO Club);
 
         void onDeleteClubButtonClicked(ClubDTO Club);

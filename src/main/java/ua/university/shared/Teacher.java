@@ -4,13 +4,7 @@ import ua.university.client.entity.TeacherDTO;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.Random;
-
-/**
- * Created by Win7 on 2016-07-29.
- */
 
 @Entity
 @Table(name = "teacher")
@@ -75,26 +69,5 @@ public class Teacher extends Person implements Serializable {
 
     public void setSubject(Subject subject) {
         this.subject = subject;
-    }
-
-    public static void main(String[] args) {
-        ArrayList<Teacher> t = new ArrayList<Teacher>();
-        ArrayList<TeacherDTO> t1 = new ArrayList<TeacherDTO>();
-
-        /*t.add(new Teacher("TestName1", "TestSurname",
-                new Date(new Random().nextInt(100), new Random().nextInt(12), new Random().nextInt(29)),
-                "Dean1"));
-        t.add(new Teacher("TestName2", "TestSurname",
-                new Date(new Random().nextInt(100), new Random().nextInt(12), new Random().nextInt(29)),
-                "Dean2"));
-        t.add(new Teacher("TestName3", "TestSurname",
-                new Date(new Random().nextInt(100), new Random().nextInt(12), new Random().nextInt(29)),
-                "Dean3"));*/
-        System.out.println(t);
-
-        /*for(Teacher ti : t){
-            t1.add(new TeacherDTO((ti)));
-        }*/
-        System.out.println(t1);
     }
 }

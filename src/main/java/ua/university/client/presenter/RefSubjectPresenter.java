@@ -10,9 +10,6 @@ import ua.university.client.UniversityServiceAsync;
 import ua.university.client.entity.SubjectDTO;
 import ua.university.client.event.*;
 import ua.university.client.view.RefSubjectView;
-import ua.university.client.view.TeacherView;
-import ua.university.client.entity.TeacherDTO;
-import ua.university.client.event.SwitchToRefSubjectViewEvent;
 import ua.university.client.event.SwitchToTeacherViewEvent;
 
 import java.util.*;
@@ -23,8 +20,6 @@ public class RefSubjectPresenter implements Presenter,
     private final RefSubjectView view;
     private final UniversityServiceAsync rpcService;
     private final HandlerManager eventBus;
-
-    //private final ArrayList<SubjectDTO> subjects = new ArrayList<SubjectDTO>();
 
     public RefSubjectPresenter(UniversityServiceAsync rpcService,
                             HandlerManager eventBus, RefSubjectView view) {
@@ -38,20 +33,6 @@ public class RefSubjectPresenter implements Presenter,
         container.clear();
         container.add(view.asWidget());
         setSubjects();
-    }
-
-    public void setSubjects(){
-        rpcService.getSubjects(new AsyncCallback<Set<SubjectDTO>>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                Window.alert("Fetching subjects from DB error!");
-            }
-
-            @Override
-            public void onSuccess(Set<SubjectDTO> result){
-                view.setSubjectList(result);
-            }
-        });
     }
 
     public void onSwitchToProjectDescrViewClicked(){
@@ -109,4 +90,17 @@ public class RefSubjectPresenter implements Presenter,
                 });
     }
 
+    private void setSubjects(){
+        rpcService.getSubjects(new AsyncCallback<Set<SubjectDTO>>() {
+            @Override
+            public void onFailure(Throwable caught) {
+                Window.alert("Fetching subjects from DB error!");
+            }
+
+            @Override
+            public void onSuccess(Set<SubjectDTO> result){
+                view.setSubjectList(result);
+            }
+        });
+    }
 }

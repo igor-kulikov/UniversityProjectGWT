@@ -6,12 +6,8 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.uibinder.client.UiTemplate;
 import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
 
-/**
- * Created by Win7 on 15.10.2016.
- */
 public class ProjectDescrViewImpl extends Composite implements ProjectDescrView{
 
     @UiTemplate("ProjectDescrView.ui.xml")

@@ -103,7 +103,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
         this.container = container;
 
         if ("".equals(History.getToken())) {
-            History.newItem("teacher");
+            History.newItem("project_descr");
         } else {
             History.fireCurrentHistoryState();
         }
