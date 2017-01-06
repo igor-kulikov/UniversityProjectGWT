@@ -81,3 +81,20 @@ insert into university.ref_subjects value(5, "Phisics");
 insert into university.ref_clubs value(1, "Football");
 insert into university.ref_clubs value(2, "Chess");
 insert into university.ref_clubs value(3, "Programming");
+
+---------------------------------------------
+select p.first_name, p.last_name, p.birthday from person p
+	join student s
+		on s.person_id = p.person_id        
+where exists(select 1 from student_subject ss		
+				join ref_subjects rs
+					on rs.subject_id = ss.subject_id
+				where ss.student_id = p.person_id
+					and rs.subject_name = "Math")
+	and exists(select 1 from student_club sc
+				join ref_clubs rc
+					on rc.club_id = sc.club_id
+				where sc.student_id = p.person_id
+					and rc.club_name = "Chess")
+order by p.person_id
+;
