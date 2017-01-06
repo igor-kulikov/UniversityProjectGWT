@@ -45,8 +45,9 @@ public class StudentDTO extends PersonDTO {
 
     @Override
     public String toString() {
-        return "StudentDTO: ID = " + id +
-                "; Subject = " + subjects +
+        return "id: " + id  + "; " +
+                super.toString() +
+                "; Subjects = " + subjects +
                 "; Clubs = " + clubs;
     }
 }

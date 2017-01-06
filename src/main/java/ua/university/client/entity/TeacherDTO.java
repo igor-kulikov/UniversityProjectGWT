@@ -23,9 +23,9 @@ public class TeacherDTO extends PersonDTO implements Serializable {
     @Override
     public String toString() {
         return "id: " + this.getId() + "; " +
-                this.getFirstName()+ " " + this.getLastName() + "(" + this.getBirthday() + ") - " +
-                "position: " + position + "; " +
-                "subject: " + subject;
+                super.toString() +
+                "Position: " + position + "; " +
+                "Subject: " + subject;
     }
 
     public int getId() {

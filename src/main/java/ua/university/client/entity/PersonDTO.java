@@ -63,4 +63,9 @@ public class PersonDTO implements Serializable {
 
         return true;
     }
+
+    @Override
+    public String toString() {
+        return firstName + " " + lastName + "(" + birthday + ") - ";
+    }
 }

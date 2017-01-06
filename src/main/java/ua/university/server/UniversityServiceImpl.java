@@ -271,12 +271,12 @@ public class UniversityServiceImpl extends RemoteServiceServlet implements Unive
             if (searchStudentDTO.getBirthday() != null)
                 criteria.where(builder.equal(studentRoot.get("birthday"), searchStudentDTO.getBirthday()));
             if (!searchStudentDTO.getSubjects().contains(new SubjectDTO(0, "<<ANY SUBJECT>>"))) {
-                /*for (SubjectDTO s : searchStudentDTO.getSubjects()) {
-                    //s1.add(subjectService.findBySubjectName(s.getSubjectName()));
-                    //criteria.where(builder.equal(studentRoot.get("subjects"), s1));
-                    criteria.where(builder.in(studentRoot.get("subjects"), subjectService.findBySubjectName(s.getSubjectName())));
-                }*/
+                /*Subquery<String> subQuery = criteria.subquery(String.class);
+                Root<Subject> entityRoot2 = subQuery.from(Subject.class);
+                predicates.add(criteriaBuilder.equal(entityRoot2.get(BundesbruderEntity_.userName), username));
+                criteriaQuery.where(criteriaBuilder.and(predicates.toArray(new Predicate[predicates.size()])));*/
             }
+
             students = session.createQuery(criteria).getResultList();
             tx.commit();
         } catch (HibernateException ex) {
@@ -337,9 +337,23 @@ public class UniversityServiceImpl extends RemoteServiceServlet implements Unive
         List<Subject> subjects = subjectService.findAll();
         Set<SubjectDTO> subjectsDTO = new HashSet<SubjectDTO>();
 
-        for (Subject s : subjects) {
+        for (Subject s : subjects)
             subjectsDTO.add(createSubjectDTO(s));
-        }
+
         return subjectsDTO;
+    }
+
+    public static void main(String[] args) {
+        UniversityServiceImpl i = new UniversityServiceImpl();
+
+        Set<SubjectDTO> subjectsDTO = new HashSet<SubjectDTO>();
+        subjectsDTO.add(new SubjectDTO(0, "Math"));
+
+        StudentDTO searchStudentDTO = new StudentDTO(0, "asdfasdf", "", null, subjectsDTO, null);
+        List<StudentDTO> foundStudents = i.searchStudents(searchStudentDTO);
+
+        for(StudentDTO s : foundStudents)
+            System.out.println(s);
+
     }
 }
