@@ -204,7 +204,7 @@ public class UniversityServiceImpl extends RemoteServiceServlet implements Unive
         Transaction tx = null;
         try {
             tx = session.beginTransaction();
-            String hql = "delete from Teacher where lastName = :last_Name " +
+            String hql = "delete from Student where lastName = :last_Name " +
                     "and firstName = :first_Name " +
                     "and birthday = :birthday_val ";
             Query q = session.createQuery(hql);
